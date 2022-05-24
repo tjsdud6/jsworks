@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue문</title>
+</head>
+<body>
+    <script>
+        /* 
+        continue문은 반복문에서 이후 반복되는 부분을 수행하지 않고
+        조건식이나 증강식을 수행 함 
+        */
+
+        // 1~10까지 자연수 중 1부터 5까지 출력 
+        for(let i = 1; i <= 10; i++){
+            if(i > 5) 
+                break;  // 빠져 나옴 
+            console.log(i);
+        }
+        console.log("===============")
+
+       // 1~10까지 자연수 중 5를 제외한 수 출력 (continue)
+       for(let i = 1; i <= 10; i++){
+            if(i == 5 ) 
+                continue; // 계속 수행 (5만 빠짐)
+            console.log(i);
+        }
+        console.log("===============")
+        // 1~10까지 자연수 중 1부터 5까지 출력 
+        for(let i = 1; i <= 10; i++){
+            if(i > 5) 
+                continue;  
+            console.log(i);
+        }
+
+
+    </script>
+</body>
+</html>

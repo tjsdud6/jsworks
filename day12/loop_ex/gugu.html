@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+<body>
+    <script>
+        //구구단 6단 출력하기
+
+        let dan = parseInt(prompt("단을 입력하세요", "2"))
+
+        for(let i = 1; i < 10; i++){
+            // 1. 1값을 가진 i 변수 선언
+            // 2. i가 10보다 작을때까지 (조건식)
+            // 3. i를 1씩 증가
+            document.write(dan + " x " + i + " = " + (dan * i) + '<br>');
+
+            // document.write("6 x " + i + " = " + (6 * i) + '<br>');
+            // "" 안에 있는건 그냥 그대로 출력
+            // i 자리에 i 넣고, (6 * i)는 6이랑 현재 i값을 곱하기
+            // '<br>'는 줄바꿈 시키기
+        }
+
+
+    </script>
+</body>
+</html>

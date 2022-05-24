@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3의 배수</title>
+</head>
+<body>
+    <script>
+        // 1부터 20까지의 숫자 중 2의 배수를 출력하세요
+        // 3으로 나눈 나머지가 0이면 3의 배수
+
+        let count = 0;
+
+        for(let i=1; i<=20; i++){
+            if (i % 3 == 0) {
+            // console.log(i); 3, 6, 9... 여기서 값이 출력이 되기 때문에 
+            document.write(i + ", " );
+            count = count + 1 // (= count++ )출력 된 개수를 세는 곳은 여기 ! 
+            }
+            // i = 3 , count = 1
+            // i = 6 , count = 1 + 1
+            // i = 9 , count = 2 + 1 
+            // i = 12 , count = 3 + 1 
+            // i = 15 , count = 4 + 1 
+            // i = 18 , count = 5 + 1 
+        }    
+        document.write("<br> 총 개수는" + count + "입니다.");
+
+    </script>
+</body>
+</html>
