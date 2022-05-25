@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 증가하는 함수</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>클릭하면 5 증가</h3>
+    <button type="button" onclick="oneUp()"> 확인 </button>
+    <p id="result"></p>
+
+    <script>
+        let x = 0;
+        function oneUp(){
+            x += 5;
+            document.getElementById("result").innerHTML = x 
+        }
+    </script>
+</body>
+</html>
