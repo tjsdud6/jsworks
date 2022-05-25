@@ -15,20 +15,14 @@
 
         function fnComplex(x, y){
             if(x==y){
-                let num1 = x * y;
-                return num1;
+                return x * y;
             }else{
-                let num2 = x + y;
-                return num2;
+                return x + y;
             }
         }
 
-        let num1 = fnComplex(10,10);
-        document.write("num1 = " + num1 + "<br>");
-
-        let num2 = fnComplex(10,5);
-        document.write("num1 = " + num2);
-
+        let num1 = fnComplex(10,10) , num2 = fnComplex(10,5);
+        document.write("num1 = " + num1 + "<br> num2 = "+ num2);
 
     </script>
 </body>
