@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        let num1 = (10, 10);    
+        let num2 = (10, 5); */ 
+
+        function fnComplex(x, y){
+            if(x==y){
+                let num1 = x * y;
+                return num1;
+            }else{
+                let num2 = x + y;
+                return num2;
+            }
+        }
+
+        let num1 = fnComplex(10,10);
+        document.write("num1 = " + num1 + "<br>");
+
+        let num2 = fnComplex(10,5);
+        document.write("num1 = " + num2);
+
+
+    </script>
+</body>
+</html>
