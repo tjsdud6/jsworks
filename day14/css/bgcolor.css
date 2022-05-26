@@ -1,0 +1,22 @@
+.menu{width: 450px; }
+ul{
+    list-style: none;
+    margin-left: 25px;    
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+    border-radius: 10px;
+}
