@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let number = [] // number array를 선언
+        let sum = 0; // 합계를 저장할 용도 
+        for(let i = 0; i < 10; i++) { // i는 0으로 선언, 10보다 작을때까지 반복, 1씩 증가
+            i++; // 0부터 시작 하면 안되기때문에 시작할때 1증가 
+            if (i % 2 == 1) { // i를 2로 나눴을때 1이 남으면 홀수 
+                number.push(i); // true일 경우 number array에 push == > ? ?? ? ??
+                sum += i;
+            }
+        }
+        number.push(sum); //더한값을 마지막에 출력 
+        
+        // document.write(number.join(" "));
+        for(let i in number) {
+            document.write(number[i] + " ");
+        }
+    </script>
+</body>
+</html>
