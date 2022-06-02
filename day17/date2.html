@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +12,19 @@
     <script>
         let now = new Date();
 
-        document.write("현재 년도 : " + now.getFullYear() + '<br>');
-        document.write("현재 월 : " + (now.getMonth() + 1) + '<br>');
-        document.write("현재 일 : " + now.getDate() + '<br>');
-        document.write("현재 요일 : " + now.getDay() + '<br>');
+        document.write("현재 년도 : " + now.getFullYear() + "<br>");
+        // 배열 0부터 시작하므로 1을 더해줌
+        document.write("현재 월 : " + (now.getMonth() + 1) + "<br>");
+        document.write("현재 일 : " + now.getDate() + "<br>");
+        document.write("현재 요일 : " + now.getDay() + "<br>");
 
-        document.write("<br>========================== 시간 =========================<br>")
-
-        document.write("현재 시간 : " + now.getHours() + '<br>');
-        document.write("현재 분 : " + now.getMinutes() + '<br>');
-        document.write("현재 초 : " + now.getSeconds() + '<br>');
-        // 1000-> 밀리초 기준이므로 나눠줌, 1970.1.1 자정 이후 시간을 밀리초로 변환
-        document.write("현재까지의 시간(초) : " + now.getTime() + '<br>')
-
+        document.write("<br>============== 시간 ===============<br>");
+        document.write("현재 시간 : " + now.getHours() + "<br>");
+        document.write("현재 분 : " + now.getMinutes() + "<br>");
+        document.write("현재 초 : " + now.getSeconds() + "<br>");
+        // 1970년 1월 1일 0시 0분 0초를 기준으로 한 것이다. 단위는 초다.
+        document.write("현재까지의 시간(초) : " + now.getTime()/1000 + "<br>");
+        document.write("현재까지의 시간(일) : " + (now.getTime()/1000/60/60/24) + "<br>");
     </script>
 </body>
 </html>

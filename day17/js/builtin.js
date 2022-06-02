@@ -10,7 +10,7 @@ var decodeStr = encodeURIComponent(encodeStr);
 console.log(decodeURIComponent(decodeStr));
 
 // 숫자, 유한 무한 값 판별
-// NaN = Not a Number
+// NaN(Not a Number)
 var num1 = "숫자";
 if(!isNaN(num1)) { // !true - false
     console.log("숫자");
@@ -26,3 +26,6 @@ let str2 = "var num8 = 20";
 eval(str1); // var num7 = 10
 eval(str2); // var num8 = 20
 console.log(num7 + num8); // 30
+
+console.log(eval("2*30")); // 60
+console.log(eval("2/30")); // 0.06
