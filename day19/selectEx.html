@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>option 요소 추가</title>
+    <script>
+        onload = function(){
+            let frm = document.frm;
+            const date = new Date();
+            let year = date.getFullYear();
+            for(var i = 1970; i <= year; i++){
+                // Option("option 내용", "option 속성값")
+                frm.y.add(new Option(i, i));
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="frm">
+        <section name="y">
+            <option value="#">년도 선택</option>
+        </section>
+        <section name="m">
+            <option value="#">월 선택</option>
+        </section>
+        <section name="sub">
+            <option value="#">과목 선택</option>
+            <option value="#">html</option>
+            <option value="#">css</option>
+            <option value="#">javascript</option>
+        </section>
+    </form>
+</body>
+</html>
