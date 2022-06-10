@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "돋움";
+    font-size: 12px;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    text-align:center;
+    padding: 10px 0;
+}
+#gnb {
+    width: 600px;
+    margin: 0 auto;
+}
+#gnb:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#gnb .m {
+    float: left;
+    width: 120px;           
+    text-align: center;
+    position: relative;            
+} 
+#gnb .m > a {
+    display: block;
+    height: 40px;            
+    line-height: 40px;
+    font-size: 1.4em;
+}        
+#gnb .m.on > a {
+    border-bottom: 4px solid #725f3f;
+    box-sizing: border-box;
+}     
+#gnb .m ul {
+    position: absolute;
+    left: 0;
+    top: 40px;            
+    width: 100%;
+    background: #000;
+    display: none;
+}        
+#gnb .m ul li a {
+    display: block;
+    color: #fff;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+}
+#gnb .m ul li:last-child a{
+    border: none;
+}
+#gnb .m ul li a:hover,
+#gnb .m ul li a:active,
+#gnb .m ul li a:focus {            
+    background: #fff;
+    color: #000;
+}
+#visual {
+    background: url(f1.jpg) no-repeat center center;             
+    height: 300px;
+}
+#visual a{
+    display: block;
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    text-indent: -99999%;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 효과 메서드</title>
+    <link rel="stylesheet" href="./css/effect.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#control a").click(function(){
+               //text() -  1,2,3,4는 문자이므로 > Number() 변환
+            let num = Number($(this).text()); //1 -eq(0, 1, 2, 3)
+            //클릭 된 번호 요소만 클래스가 적용되고, 다른 형제요소들은 클래스 제거
+            $(this).addClass("on").siblings().removeClass("on");
+            //div 요소 중 visible된 요소는 fadeOut() 시키고(종료),
+            //클릭한 번호에 해당하는 요소는 fadeIn()을 시킴
+            $("#pic > div").filter(":visible").stop().fadeOut(350).end()
+                            .eq(num-1).stop().fadeIn(350);
+           })
+        //    $("#control a:first").add("#pic > div:first").show();
+        });
+    </script>
+</head>
+</head>
+<body>
+    <div id="visual">
+        <div id="pic">            
+                <div><a href="#"><img src="./img/f1.jpg" alt="1"></a></div>
+                <div><a href="#"><img src="./img/f2.jpg" alt="2"></a></div>
+                <div><a href="#"><img src="./img/f3.jpg" alt="3"></a></div>
+                <div><a href="#"><img src="./img/f4.jpg" alt="4"></a></div>            
+        </div>        
+        <div id="control">
+            <a href="javascript:;">1</a>
+            <a href="javascript:;">2</a>
+            <a href="javascript:;">3</a>
+            <a href="javascript:;">4</a>
+        </div>
+    </div>
+</body>
+</html>
