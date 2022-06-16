@@ -284,17 +284,17 @@ width: 100%; overflow: hidden; word-break: keep-all; line-height: 1.8; color: #6
 .near_list li a {float:left;}
 
 /* place_area */
-.bodytext_area.place_area {padding:55px 0 0;}
-.program_list li {float:left; width:31.5%; margin:0 0.9%;}
-.program_list li:nth-child(3n+1) {clear:both;}
-.program_list li .img_place {display:block;  width:100%;}
-.program_list li h3 {padding:40px 0 0; font-weight:bold; font-size:22px;}
-.program_list li .subttl {padding:25px 0 0; font-weight:bold; font-size:16px; color:#fa6400; letter-spacing: 0;}
-.program_list li .program_content {padding:15px 0 0; line-height:1.8; font-size:15px;}
-.program_list li .program_content p {width:100%; overflow:hidden; word-break:keep-all;}
-.program_list li .program_content p .subtxt {display: none;}
-.program_list li .btn_more {padding:10px 0 20px; text-align:center; font-size:12px;}
-.program_list li .btn_more a {display:inline-block; padding:5px 7px; border-radius:3px; background:#000; color:#fff;}
+.bodytext_area.place_area{padding:55px 0 0 ;}
+.program_list li{float: left; width: 31.5%; margin: 0 0.9%;}
+.program_list li:nth-child(3n+1) {clear: both;}
+.program_list .img_place{display: block; width: 100%;}
+.program_list li h3{padding: 40px 0 0; font-weight: bold; font-size: 22px;}
+.program_list li .subttl{padding:25px 0 0; font-weight: bold; font-size: 16px; color: #fa6400; letter-spacing: 0;}
+.program_list li .program_content{padding: 15px 0 0; line-height: 1.8; font-size: 15px;}
+.program_list li .program_content p{width: 100%; overflow: hidden; word-break: keep-all;}
+.program_list li .program_content p .subtxt{display: none;}
+.program_list li .btn_more {padding: 10px 0 20px; text-align: center; font-size: 12px;}
+.program_list li .btn_more a{display: inline-block; padding: 5px 7px; border-radius: 3px;background: #000; color: #fff;}
 
 /* login */
 .login_wrap {width:468px; margin:50px auto 0;}
@@ -513,11 +513,6 @@ h1.loginTit a img {width:100%;}
 	.program_list li .btn_more {display:none;}
 
 	/* login */
-	.login_wrap {width:100%; margin:0 auto;}
-	h1.loginTit a {display:block;}
-	.login_list {margin:50px auto 20px;}
-	.login_list li {height:50px;}
-	.login_list li a {height:50px; line-height:50px;}
 
 	/* 회원가입 */
 	.appForm {margin:20px auto;}
